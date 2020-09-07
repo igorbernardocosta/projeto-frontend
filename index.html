@@ -29,10 +29,15 @@
     </header>
     <main>
         <section class="main-feature">
-            Seu conteúdo ou feature principal vem aqui
+            <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                <p>Arraste e solte um ou mais arquivos aqui.</p>
+            </div>
         </section>
-        <aside class="secundary-feature">
-            Algum conteúdo ou feature não-principal de apoio
+        <aside class="secundary-feature" id="secundary-feature">
+            <h2>Arquivos adicionados</h2>
+            <ul id="filesList">
+
+            </ul>
         </aside>
     </main>
     <footer>

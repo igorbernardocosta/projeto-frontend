@@ -27,7 +27,7 @@ h1.app-title {
 section.main-feature {
     float: left;
     background-color: #fbfbfb;
-    width: 80vw;
+    width: 78vw;
 }
 
 aside.secundary-feature {
@@ -36,4 +36,9 @@ aside.secundary-feature {
     width: 20vw;
     height: 82vh;
     color: #fff;
+}
+
+#drop_zone {
+    width: 78vw;
+    height: 78vh;
 }
