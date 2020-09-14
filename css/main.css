@@ -1,44 +1,54 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    text-align: center;
+    background-color: rgba(240, 238, 238, 0.945);
 }
 
-body>header {
-    background-color: #627a14;
-    padding: 1vh 1vw;
-    height: 13vh;
-    box-sizing: border-box;
-    color: #fff;
+.title {
+    color: rgb(78, 78, 182);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
 }
 
-body>main {
-    height: 82vh;
+.dragdrop_dropzone {
+    vertical-align: middle;
+    background-color: rgba(255, 255, 240, 0.849);
+    border-color: gray;
+    border-style: dashed;
+    border-radius: 8px;
+    text-align: center;
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
 }
 
-body>footer {
-    height: 5vh;
-    background-color: #b3cb65;
+.dragdrop_dropzone:hover {
+    box-shadow: 0px 0px 1em #666;
 }
 
-h1.app-title {
-    font-size: 20px;
-}
-
-section.main-feature {
-    float: left;
-    background-color: #fbfbfb;
-    width: 78vw;
-}
-
-aside.secundary-feature {
-    float: right;
-    background-color: #6f4d8f;
-    width: 20vw;
-    height: 82vh;
-    color: #fff;
-}
-
-#drop_zone {
-    width: 78vw;
-    height: 78vh;
+@media (min-width: 992px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: rgba(240, 238, 238, 0.945);
+    }
+    .title {
+        color: rgb(78, 78, 182);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
+    }
+    .dragdrop_dropzone {
+        vertical-align: middle;
+        background-color: rgba(255, 255, 240, 0.849);
+        border-color: gray;
+        border-style: dashed;
+        border-radius: 8px;
+        text-align: center;
+        width: 50vw;
+        height: 50vh;
+        margin: auto;
+    }
+    .dragdrop_dropzone:hover {
+        box-shadow: 0px 0px 1em #666;
+    }
 }

@@ -11,9 +11,9 @@ function dropHandler(ev) {
                 console.log('... file[' + i + '].name = ' + file.name);
                 fileName = file.name;
                 console.log(fileName);
-                var elementHtml = document.createElement('li');
+                var elementHtml = document.createElement('p');
                 elementHtml.innerHTML = fileName
-                document.getElementById('filesList').appendChild(elementHtml);
+                document.getElementById('dragdrop_dropzone').appendChild(elementHtml);
             }
         }
     } else {

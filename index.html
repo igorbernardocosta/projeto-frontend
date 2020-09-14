@@ -24,25 +24,15 @@
 
 <body>
     <header>
-        <h1 class="app-title">Título da sua página ou webapp</h1>
-        <nav>Menu de navegação principal</nav>
+        <h1 class="title">Upload de Arquivos</h1>
     </header>
     <main>
-        <section class="main-feature">
-            <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                <p>Arraste e solte um ou mais arquivos aqui.</p>
+        <section class="dragdrop">
+            <div class="dragdrop_dropzone" id="dragdrop_dropzone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
             </div>
         </section>
-        <aside class="secundary-feature" id="secundary-feature">
-            <h2>Arquivos adicionados</h2>
-            <ul id="filesList">
-
-            </ul>
-        </aside>
     </main>
-    <footer>
-        Informações gerais, recursos secundários de apoio, nome do autor.
-    </footer>
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
