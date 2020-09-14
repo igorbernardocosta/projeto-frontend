@@ -1,54 +1,59 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: rgba(240, 238, 238, 0.945);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgba(240, 238, 238, 0.945);
 }
 
 .title {
-    color: rgb(78, 78, 182);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+  color: #4e4eb6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
 }
 
 .dragdrop_dropzone {
+  vertical-align: middle;
+  background-color: rgba(255, 255, 240, 0.849);
+  border-color: gray;
+  border-style: dashed;
+  border-radius: 8px;
+  text-align: center;
+  width: 90vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.dragdrop_dropzone:hover {
+  box-shadow: 0px 0px 1em #666;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(240, 238, 238, 0.945);
+  }
+
+  .title {
+    color: #4e4eb6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+  }
+
+  .dragdrop_dropzone {
     vertical-align: middle;
     background-color: rgba(255, 255, 240, 0.849);
     border-color: gray;
     border-style: dashed;
     border-radius: 8px;
     text-align: center;
-    width: 90vw;
+    width: 50vw;
     height: 50vh;
     margin: auto;
-}
+  }
 
-.dragdrop_dropzone:hover {
+  .dragdrop_dropzone:hover {
     box-shadow: 0px 0px 1em #666;
+  }
 }
 
-@media (min-width: 992px) {
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        background-color: rgba(240, 238, 238, 0.945);
-    }
-    .title {
-        color: rgb(78, 78, 182);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 28px;
-    }
-    .dragdrop_dropzone {
-        vertical-align: middle;
-        background-color: rgba(255, 255, 240, 0.849);
-        border-color: gray;
-        border-style: dashed;
-        border-radius: 8px;
-        text-align: center;
-        width: 50vw;
-        height: 50vh;
-        margin: auto;
-    }
-    .dragdrop_dropzone:hover {
-        box-shadow: 0px 0px 1em #666;
-    }
-}
+/*# sourceMappingURL=main.css.map */
