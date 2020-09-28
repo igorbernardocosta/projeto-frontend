@@ -5,7 +5,9 @@ const dropHandler = (ev) => {
         for (let i = 0; i < ev.dataTransfer.items.length; i++) {
             if (ev.dataTransfer.items[i].kind === 'file') {
                 let file = ev.dataTransfer.items[i].getAsFile();
-                output(file.name);
+                let detailFile = { name: file.name, type: file.type, size: file.size }
+                let { name } = detailFile
+                output(name);
             }
         }
     } else {
