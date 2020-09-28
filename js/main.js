@@ -1,19 +1,11 @@
-function dropHandler(ev) {
-    console.log('File(s) dropped');
-
+var dropHandler = (ev) => {
     ev.preventDefault();
 
     if (ev.dataTransfer.items) {
-        var fileName;
         for (var i = 0; i < ev.dataTransfer.items.length; i++) {
             if (ev.dataTransfer.items[i].kind === 'file') {
                 var file = ev.dataTransfer.items[i].getAsFile();
-                console.log('... file[' + i + '].name = ' + file.name);
-                fileName = file.name;
-                console.log(fileName);
-                var elementHtml = document.createElement('p');
-                elementHtml.innerHTML = fileName
-                document.getElementById('dragdrop_dropzone').appendChild(elementHtml);
+                output(file.name);
             }
         }
     } else {
@@ -23,8 +15,10 @@ function dropHandler(ev) {
     }
 }
 
-function dragOverHandler(ev) {
-    console.log('File(s) in drop zone');
+var output = (text) => {
+    document.getElementById('dragdrop_dropzone').textContent += text;
+}
 
+var dragOverHandler = (ev) => {
     ev.preventDefault();
 }
