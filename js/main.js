@@ -17,7 +17,7 @@ const dropHandler = (ev) => {
     }
 }
 
-const output = (text) => {
+const output = (text = "Nome Inválido") => {
     document.getElementById('dragdrop_dropzone').textContent += text;
 }
 
